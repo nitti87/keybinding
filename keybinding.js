@@ -31,7 +31,6 @@ class Key {
      const splitIf = option.do_if.split(/(?:or)|[|]/).map(arr => arr.trim().split(/[+&]/))
      let event = []
 
-     console.log(splitIf)
       element.addEventListener(option.to, (evt) => {
         event.push(parseInt(evt.which || evt.keyCode))
         event.sort((a, b) => b - a)
